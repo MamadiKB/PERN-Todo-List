@@ -1,7 +1,7 @@
-CREATE DATABASE testtodo;
+CREATE DATABASE todopern;
 
 CREATE TABLE todo (
     todo_id SERIAL PRIMARY KEY,
     description VARCHAR(255),
-    status CHAR(2) DEFAULT 0
+    status CHAR(1) DEFAULT 0
 );
