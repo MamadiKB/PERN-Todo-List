@@ -1,0 +1,86 @@
+@use 'src/styles/vars';
+
+.todos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 3rem;
+  padding-left: 1rem;
+  margin: 1rem;
+  background: rgb(204,43,94);
+  background: linear-gradient(90deg, rgba(204,43,94,1) 0%, rgba(117,58,136,1) 100%);
+  border-radius: 0.5rem;
+  color: antiquewhite;
+  font-weight: 700;
+  font-size: 1.2rem;
+
+  &.done {
+    text-decoration: line-through;
+    background: rgba(204, 43, 94, 0.24);
+    color: rgba(250, 235, 215, 0.432);
+  }
+  
+  &__buttons {
+    display: flex;
+    background-color: #37392E;
+    padding-left: 1rem;
+  }
+
+  &__button {
+    margin: 0rem 0.5rem;
+    height: 3rem;
+    padding: 0rem 1rem;
+    border: none;
+    border-radius: 50%;
+    background: linear-gradient(145deg, #3b3d31, #323329);
+    box-shadow:  5px 5px 10px #313329,
+                 -5px -5px 10px #3d3f33;
+    color: gray;
+
+    &:active {
+      background: linear-gradient(145deg, #323329, #3b3d31);
+      box-shadow:  5px 5px 10px #313329,
+                   -5px -5px 10px #3d3f33;
+    }
+    
+    &.delete {
+      color: red;        
+    } 
+  }
+
+  &__description {
+    display: flex;
+    align-items: center;
+  }
+
+  &__checkbox {
+    height: 1.2rem;
+    width: 1.2rem;
+    margin-right: 1rem;
+  }
+}
+
+.fa {
+  font-size: 1.5rem;
+}
+
+// for field components
+.edit__input {
+  width: 8rem;
+  height: 2rem;
+  border-radius: 0.5rem 0rem 0rem 0.5rem;
+  border: none;
+  font-family: vars.$font;
+  font-size: 1.2rem;
+  padding-left: 0.5rem;
+}
+
+.edit__button {
+  height: 2rem;
+  width: 2rem;
+  border: none;
+  background-color: rgb(255, 2, 82);
+  color: antiquewhite;
+  font-family: vars.$font;
+  font-size: 1.2rem;
+}

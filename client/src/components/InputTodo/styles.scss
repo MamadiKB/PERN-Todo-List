@@ -1,0 +1,38 @@
+@use 'src/styles/vars';
+.inputTodo {
+  margin: 1rem;
+
+  &__input {
+    width: 20rem;
+    height: 3rem;
+    padding-left: 0.5rem;
+    border: 0.5rem solid rgb(204,43,94);
+    border-radius: 0.5rem 0rem  0rem 0.5rem;
+    background: #E8D7F1;
+    font-family: vars.$font;
+    
+    &:focus {
+      background: whitesmoke;
+    }
+  }
+
+  &__button {
+    height: 3rem;
+    width: 6rem;
+    border-radius: 0rem 0.5rem  0.5rem 0rem;
+    border: none;
+    font-weight: 700;
+    background: grey;
+    background: linear-gradient(90deg, rgba(204,43,94,1) 0%, rgba(117,58,136,1) 100%);
+    color:antiquewhite;
+    font-family: vars.$font;
+  }
+}
+
+
+
+
+
+
+
+
