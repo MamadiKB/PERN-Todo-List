@@ -1,0 +1,21 @@
+.app {
+  width: 40rem;
+  margin: 1em auto;
+  text-align: center;
+  margin-top: 5rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background: #37392e;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 3rem;
+  color:antiquewhite
+}
+
+@media screen and (max-width: 640px) {
+  .app{
+    width: 35rem;
+  }
+}
